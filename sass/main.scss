@@ -1,0 +1,33 @@
+// COLOR VARIABLES
+$color-desaturated-red: hsl(0, 36%, 70%);
+$color-soft-red: hsl(0, 93%, 68%);
+
+$color-brown: hsl(0, 6%, 24%);
+
+$color-gradient-light-1: hsl(0, 0%, 100%);
+$color-gradient-light-2: hsl(0, 100%, 98%);
+$color-gradient-dark-1: hsl(0, 80%, 86%);
+$color-gradient-dark-2: hsl(0, 74%, 74%);
+
+// FONT VARIABLES
+$font-family: 'Josefin Sans', sans-serif;
+
+// FONT SIZE
+$default-font-size: 1.6rem;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px
+}
+
+body {
+    
+}
