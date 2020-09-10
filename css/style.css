@@ -8,3 +8,97 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.4rem;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(135deg, white, #fff5f5); }
+
+.header {
+  padding: 2.7rem; }
+  .header__logo {
+    height: 2rem;
+    width: auto; }
+
+.hero {
+  width: 100%;
+  height: 25rem;
+  background-image: url(../images/hero-mobile.jpg);
+  background-size: cover; }
+
+.text {
+  text-align: center;
+  padding: 6rem 3.2rem;
+  color: #ce9797; }
+  .text__heading {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 4.2rem;
+    letter-spacing: 10px;
+    margin-bottom: 1.5rem; }
+  .text__heading--bold {
+    color: #413a3a;
+    font-weight: 600; }
+  .text__copy {
+    line-height: 2.2rem;
+    margin-bottom: 3rem; }
+
+.form {
+  display: block;
+  height: 4.8rem;
+  width: 100%;
+  position: relative; }
+  .form__label {
+    position: absolute;
+    visibility: hidden; }
+  .form__input {
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    outline: none;
+    border: 1px solid rgba(206, 151, 151, 0.6);
+    padding: 2rem; }
+  .form__input::placeholder {
+    color: #ce9797;
+    opacity: .6;
+    font-family: "Josefin Sans", sans-serif; }
+  .form__error-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7rem;
+    display: none; }
+  .form__btn {
+    width: 6.4rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+    cursor: pointer; }
+  .form__error-text {
+    color: #f96262;
+    position: absolute;
+    left: 2rem;
+    transform: translateY(-2rem);
+    opacity: 0;
+    display: block;
+    transition: transform, .3s, opacity .3s; }
+
+.error .form__error-icon {
+  display: block; }
+
+.error .form__input {
+  border: 2px solid #f96262; }
+
+.error .form__error-text {
+  transform: translateY(1rem);
+  opacity: 1; }

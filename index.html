@@ -19,21 +19,30 @@
   </head>
 
   <body>
-    <header>
-      <img src="/images/logo.svg" alt="Logo" class="logo">
+    <header class="header">
+      <img src="/images/logo.svg" alt="Logo" class="header__logo">
     </header>
 
-    We're coming soon
+    <main class="container">
+      <div class="hero"></div>
+      <div class="text">
+        <h1 class="text__heading">We're <br><span class="text__heading--bold">coming <br>soon</span></h1>
+        <p class="text__copy">Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <form action="#" method="GET" class="form">
+          <label for="email" class="form__label">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="Email Address" class="form__input">
+          <img src="./images/icon-error.svg" alt="Email error" class="form__error-icon">
+          <button type="submit" class="form__btn"><img src="./images/icon-arrow.svg" alt="Submit button"></button>
+          <p class="form__error-text">Please provide a valid email</p>
+        </form>
+      </div>
+    </main>
 
-    Hello fellow shoppers! We're currently building our new fashion store. 
-    Add your email below to stay up-to-date with announcements and our launch deals.
-
-    Email Address
-    
     <footer>
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Jen Speak</a>.
+        Coded by <a href="https://github.com/En-Jen" target="_blank">Jen Speak</a>.
       </p>
     </footer>
     <script src="script.js"></script>

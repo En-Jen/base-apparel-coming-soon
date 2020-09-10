@@ -29,5 +29,126 @@ html {
 }
 
 body {
+    font-family: $font-family;
+    font-size: 1.4rem;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, $color-gradient-light-1, $color-gradient-light-2);
+}
+
+.header {
+    padding: 2.7rem;
+
+    &__logo {
+        height: 2rem;
+        width: auto;
+    }
+}
+
+.hero {
+    width: 100%;
+    height: 25rem;
+    background-image: url(../images/hero-mobile.jpg);
+    background-size: cover;
+}
+
+.text {
+    text-align: center;
+    padding: 6rem 3.2rem;
+    color: $color-desaturated-red;
     
+
+    &__heading {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 4rem;
+        line-height: 4.2rem;
+        letter-spacing: 10px;
+        margin-bottom: 1.5rem;
+    }
+
+    &__heading--bold {
+        color: $color-brown;
+        font-weight: 600;
+    }
+
+    &__copy {
+        line-height: 2.2rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.form {
+    display: block;
+    height: 4.8rem;
+    width: 100%;
+    position: relative;
+
+    &__label {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    &__input {
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        outline: none;
+        border: 1px solid hsla(0, 36%, 70%, 0.6);
+        padding: 2rem;
+    }
+
+    &__input::placeholder {
+        color: $color-desaturated-red;
+        opacity: .6;
+        font-family: $font-family;
+    }
+
+    &__error-icon {
+        height: 2.4rem;
+        width: 2.4rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 7rem;
+        display: none;
+    }
+
+    &__btn {
+        width: 6.4rem;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 100px;
+        border: none;
+        outline: none;
+        background-image: linear-gradient(135deg, $color-gradient-dark-1, $color-gradient-dark-2);
+        cursor: pointer;
+    }
+
+    &__error-text {
+        color: $color-soft-red;
+        position: absolute;
+        left: 2rem;
+        transform: translateY(-2rem);
+        opacity: 0;
+        display: block;
+        transition: transform, .3s, opacity .3s;
+    }
+}
+
+.error {
+    .form__error-icon {
+        display: block;
+    }
+
+    .form__input {
+        border: 2px solid $color-soft-red;
+    }
+
+    .form__error-text {
+        transform: translateY(1rem);
+        opacity: 1;
+    }
 }
