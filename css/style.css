@@ -24,9 +24,21 @@ body {
 
 .header {
   padding: 2.7rem; }
+  @media only screen and (min-width: 1200px) {
+    .header {
+      position: absolute;
+      width: 57.7%;
+      padding: 0; } }
+  @media only screen and (min-width: 1200px) {
+    .header__container {
+      width: 444px;
+      margin: 6rem auto 0 auto; } }
   .header__logo {
     height: 2rem;
     width: auto; }
+    @media only screen and (min-width: 1200px) {
+      .header__logo {
+        height: 3.15rem; } }
 
 .hero {
   width: 100%;
@@ -51,6 +63,14 @@ body {
   @media only screen and (min-width: 768px) {
     .text {
       padding: 9rem 3.2rem; } }
+  @media only screen and (min-width: 1200px) {
+    .text {
+      text-align: left;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 4rem; } }
   .text__heading {
     text-transform: uppercase;
     font-weight: 300;
@@ -107,6 +127,9 @@ body {
     transform: translateY(-50%);
     right: 7rem;
     display: none; }
+    @media only screen and (min-width: 1200px) {
+      .form__error-icon {
+        right: 11rem; } }
   .form__btn {
     width: 6.4rem;
     height: 100%;
