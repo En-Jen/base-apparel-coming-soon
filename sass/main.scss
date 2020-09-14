@@ -45,7 +45,7 @@ body {
 }
 
 .header {
-    padding: 2.7rem;
+    padding: 3rem;
 
     @media only screen and (min-width: 1200px) {
         position: absolute;
@@ -55,8 +55,8 @@ body {
 
     &__container {
         @media only screen and (min-width: 1200px) {
-            width: 444px;
-            margin: 6rem auto 0 auto;
+            width: 50rem;
+            margin: 6.2rem auto 0 auto;
         }
     }
 
@@ -88,23 +88,35 @@ body {
 }
 
 .text {
-    text-align: center;
-    padding: 6rem 3.2rem;
-    color: $color-desaturated-red;
-    max-width: 444px;
-    margin: 0 auto;
-
-    @media only screen and (min-width: 768px) {
-        padding: 9rem 3.2rem
-    }
-
     @media only screen and (min-width: 1200px) {
-        text-align: left;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 4rem;
+        height: 100vh;
+        width: 57.7%;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }    
+
+
+    &__container {
+        text-align: center;
+        padding: 6rem 3.2rem;
+        color: $color-desaturated-red;
+        max-width: 50rem;
+        height: 100%;
+        margin: 0 auto;
+    
+        @media only screen and (min-width: 768px) {
+            padding: 9rem 3.2rem
+        }
+    
+        @media only screen and (min-width: 1200px) {
+            text-align: left;
+            padding: 0;
+            padding: 7.5rem 6rem 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     &__heading {
@@ -113,11 +125,15 @@ body {
         font-size: 4rem;
         line-height: 4.2rem;
         letter-spacing: 10px;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.8rem;
 
         @media only screen and (min-width: 768px) {
             font-size: 6.4rem;
             line-height: 6.4rem;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            letter-spacing: 17px;
         }
     }
 
@@ -132,11 +148,15 @@ body {
 
     &__copy {
         line-height: 2.2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 3.4rem;
 
         @media only screen and (min-width: 768px) {
             font-size: 1.6rem;
             line-height: 2.8rem;
+        }
+
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 4rem;
         }
     }
 }
@@ -162,8 +182,13 @@ body {
         border-radius: 100px;
         outline: none;
         border: 1px solid hsla(0, 36%, 70%, 0.6);
-        padding: 2rem;
+        padding: 2.4rem;
         background-color: transparent;
+
+        @media only screen and (min-width: 768px) {
+            padding-left: 3.2rem;
+            font-size: 1.6rem;
+        }
     }
 
     &__input::placeholder {
