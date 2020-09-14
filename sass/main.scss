@@ -182,7 +182,7 @@ body {
         border-radius: 100px;
         outline: none;
         border: 1px solid hsla(0, 36%, 70%, 0.6);
-        padding: 2.4rem;
+        padding-left: 2.4rem;
         background-color: transparent;
 
         @media only screen and (min-width: 768px) {
@@ -206,7 +206,7 @@ body {
         right: 7rem;
         display: none;
 
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: 768px) {
             right: 11rem;
         }
     }
@@ -236,7 +236,7 @@ body {
         }
     }
 
-    &__error-text {
+    &__feedback {
         color: $color-soft-red;
         position: absolute;
         left: 2rem;
@@ -256,7 +256,15 @@ body {
         border: 2px solid $color-soft-red;
     }
 
-    .form__error-text {
+    .form__feedback {
+        transform: translateY(1rem);
+        opacity: 1;
+    }
+}
+
+.success {
+    .form__feedback {
+        color: hsl(120, 80%, 40%);
         transform: translateY(1rem);
         opacity: 1;
     }
@@ -268,7 +276,7 @@ body {
     line-height: 1.6rem;
     text-align: center;
     position: absolute;
-    bottom: 1rem;
+    bottom: .5rem;
     left: 50%;
     transform: translateX(-50%);
 
